@@ -1,31 +1,46 @@
 $(document).ready(function() {
-$('#first_form').submit(function(e) {
+ $('#firstForm').submit(function(e) {
     e.preventDefault();
-    var first_name = $('#first_name').val();
-    var last_name = $('#last_name').val();
+    var firstName = $('#firstName').val();
+    var lastName = $('#lastName').val();
     var email = $('#email').val();
     var password = $('#password').val();
-
+    var num=$('#num').val();
+    var address=$('#address').val();
     $(".error").remove();
 
-    if (first_name.length < 1) {
-      $('#first_name').after('<span class="error">This field is required</span>');
+    if (firstName.length < 1) {
+      $('#firstName').after('<div class="error">This field is required</div>');
     }
-    if (last_name.length < 1) {
-      $('#last_name').after('<span class="error">This field is required</span>');
+    if (lastName.length < 1) {
+      $('#lastName').after('<div class="error">This field is required</div>');
     }
     if (email.length < 1) {
-      $('#email').after('<span class="error">This field is required</span>');
+      $('#email').after('<div class="error">This field is required</div>');
     } else {
-      var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/;
+      var regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       var validEmail = regEx.test(email);
       if (!validEmail) {
-        $('#email').after('<span class="error">Enter a valid email</span>');
+        $('#email').after('<div class="error">Enter a valid email</div>');
       }
     }
-    if (password.length < 8) {
-      $('#password').after('<span class="error">Password must be at least 8 characters long</span>');
+    if (password.length < 5) {
+      $('#password').after('<div class="error">Password must be at least 5 characters long</div>');
     }
-  });
 
+    if (num.length < 10) {
+      $('#num').after('<div class="error">Phonenumber must be  10 digits </div>');
+    } else {
+      var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+      var validNum= filter.test(num);
+      if (!validNum) {
+        $('#num').after('<div class="error">Enter a valid phoneNumber</div>');
+      }
+    }
+    if (address.length < 1) {
+      $('#address').after('<div class="error">This field is required</div>');
+    }
+    
+  });
+ 
 });

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
      <title>form Validation</title>
     <script defer src="assets/jquery.js"></script>
@@ -7,28 +7,61 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
-<h2>Form Validation</h2>
-<form id="first_form" method="post" action="">
-  <div>
-    <label for="first_name">First Name:</label>
-    <input type="text" id="first_name" name="first_name"></input>
+    <div class="box">	
+        <h2>Form Validation</h2>
+	<form id="firstForm" method="post" action="abc.html">
+  		<div>
+    			<label for="firstName">First Name:</label>
+    			<input type="text" id="firstName" name="firstName/">
+  		</div>
+  		<div>
+    			<label for="lastName">Last Name:</label>
+    			<input type="text" id="lastName" name="lastName/">
+  		</div>
+  		<div>
+    			<label for="email">Email:</label>
+    			<input type="email" id="email" name="email/">
+  		</div>
+  		<div>
+    			<label for="password">Password:</label>
+    			<input type="password" id="password" name="password/">
+  		</div>
+  		<div>
+			<label id="gender">Gender:</label>
+			<input id="rd1" type="radio"  name="sex" value="Male" /><span>Male</span>
+			<input id="rd2" type="radio"  value="female" name="sex"/><span>Female</span>
+  		</div>
+  		<div>
+			<label for="address">Address:</label>
+        		<textarea id="address" name="address"></textarea>
+  		</div>
+  		<div>
+ 			<label for="num">Ph no:</label>
+        		<input id="num" name="num" type="number"/>
+  		</div>
+  		<div>
+			<label id="language">Languages known:</label>
+			<input type="checkbox"  value="Malayalam"/>
+        		<span>Malayalam</span>
+			<input type="checkbox"  value="English" />
+        		<span>English</span>
+       			<input type="checkbox"  value="Hindi" />
+       			<span>Hindi</span>
+  		</div>
+  		<div>
+			<label id="dis">district:</label>
+        		<select name="district">
+        			<option selected="" value="Default"> (Please select a district)</option>
+        			<option value="AF">TVM</option>
+        			<option value="AL">KOCHI</option>
+        			<option value="DZ">KALICUT</option>
+        			<option value="AS">KOTTAYAM</option>
+        			<option value="AD">IDUKKI</option>
+        		</select>
+  		</div>
+  		<br>
+    		<input type="submit" value="Submit" />
+  	  </form>
   </div>
-  <div>
-    <label for="last_name">Last Name:</label>
-    <input type="text" id="last_name" name="last_name"></input>
-  </div>
-  <div>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"></input>
-  </div>
-  <div>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password"></input>
-  </div>
-  <div>
-    <input type="submit" value="Submit" />
-  </div>
-</form>
 </body>
 </html>

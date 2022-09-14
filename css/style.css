@@ -1,3 +1,15 @@
+.box{
+	margin: auto;
+	width: 50%;
+}
+#firstForm {
+    width:50%;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    
+}
+
 form label {
   display: inline-block;
   width: 100px;
@@ -9,8 +21,9 @@ form div {
 
 .error {
   color: red;
-  margin-left: 5px;
+  margin-left:100px;
 }
+
 
 label.error {
   display: inline;
