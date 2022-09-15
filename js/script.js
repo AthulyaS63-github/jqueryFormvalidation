@@ -47,12 +47,12 @@ $(document).ready(function() {
    if(selectedRadio){
    }
    else{
-      $('#gender1').after('<div class="error">This field is required</div>');
+      $('#gender1').after('<div class="error">please select any one</div>');
    }
     if(selectedLang){
    }
    else{
-      $('#lang').after('<div class="error">This field is required</div>');
+      $('#lang').after('<div class="error">please select any one</div>');
    }
    if(selectedPlace){
    }
