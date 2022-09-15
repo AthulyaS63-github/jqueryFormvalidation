@@ -7,8 +7,10 @@ $(document).ready(function() {
     var password = $('#password').val();
     var num=$('#num').val();
     var address=$('#address').val();
+    var selectedRadio=$("input[name='sex']:checked").val();
+    var selectedLang=$("input[name='lan']:checked").val();
+    var selectedPlace=$("option[name='place']:checked").val();
     $(".error").remove();
-
     if (firstName.length < 1) {
       $('#firstName').after('<div class="error">This field is required</div>');
     }
@@ -40,7 +42,22 @@ $(document).ready(function() {
     if (address.length < 1) {
       $('#address').after('<div class="error">This field is required</div>');
     }
-    
+
+   if(selectedRadio){
+   }
+   else{
+      $('#gender1').after('<div class="error">This field is required</div>');
+   }
+    if(selectedLang){
+   }
+   else{
+      $('#lang').after('<div class="error">This field is required</div>');
+   }
+   if(selectedPlace){
+   }
+   else{
+      $('#select').after('<div class="error">This field is required</div>');
+   }
   });
  
 });

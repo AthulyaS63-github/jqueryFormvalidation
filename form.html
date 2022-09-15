@@ -28,8 +28,10 @@
   		</div>
   		<div>
 			<label id="gender">Gender:</label>
-			<input id="rd1" type="radio"  name="sex" value="Male" /><span>Male</span>
-			<input id="rd2" type="radio"  value="female" name="sex"/><span>Female</span>
+			<span id="gender1">
+				<input id="rd1" type="radio"  name="sex" value="Male" /><span>Male</span>
+				<input id="rd2" type="radio"  name="sex" value="female" /><span>Female</span>
+			</span>
   		</div>
   		<div>
 			<label for="address">Address:</label>
@@ -41,22 +43,24 @@
   		</div>
   		<div>
 			<label id="language">Languages known:</label>
-			<input type="checkbox"  value="Malayalam"/>
-        		<span>Malayalam</span>
-			<input type="checkbox"  value="English" />
-        		<span>English</span>
-       			<input type="checkbox"  value="Hindi" />
-       			<span>Hindi</span>
+			<span id="lang">
+				<input type="checkbox"  value="Malayalam" name="lan"/>
+        			<span>Malayalam</span>
+				<input type="checkbox"  value="English" name="lan"/>
+        			<span>English</span>
+       				<input type="checkbox"  value="Hindi" name="lan" />
+       				<span>Hindi</span>
+			</span>
   		</div>
   		<div>
 			<label id="dis">district:</label>
-        		<select name="district">
+        		<select name="district" id="select">
         			<option selected="" value="Default"> (Please select a district)</option>
-        			<option value="AF">TVM</option>
-        			<option value="AL">KOCHI</option>
-        			<option value="DZ">KALICUT</option>
-        			<option value="AS">KOTTAYAM</option>
-        			<option value="AD">IDUKKI</option>
+        			<option value="AF" name="place">TVM</option>
+        			<option value="AL" name="place">KOCHI</option>
+        			<option value="DZ" name="place">KALICUT</option>
+        			<option value="AS" name="place">KOTTAYAM</option>
+        			<option value="AD" name="place">IDUKKI</option>
         		</select>
   		</div>
   		<br>
