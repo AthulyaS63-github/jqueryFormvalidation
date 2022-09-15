@@ -11,7 +11,8 @@ $(document).ready(function() {
     var selectedLang=$("input[name='lan']:checked").val();
     var selectedPlace=$("option[name='place']:checked").val();
     $(".error").remove();
-    if (firstName.length < 1) {
+   
+    if(firstName.length < 1) {
       $('#firstName').after('<div class="error">This field is required</div>');
     }
     if (lastName.length < 1) {

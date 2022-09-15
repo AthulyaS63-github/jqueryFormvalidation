@@ -10,38 +10,38 @@
     <div class="box">	
         <h2>Form Validation</h2>
 	<form id="firstForm" method="post" action="abc.html">
-  		<div>
+  		<div class="row">
     			<label for="firstName">First Name:</label>
     			<input type="text" id="firstName" name="firstName/">
   		</div>
-  		<div>
+  		<div class="row">
     			<label for="lastName">Last Name:</label>
     			<input type="text" id="lastName" name="lastName/">
   		</div>
-  		<div>
+  		<div class="row">
     			<label for="email">Email:</label>
     			<input type="email" id="email" name="email/">
   		</div>
-  		<div>
+  		<div class="row">
     			<label for="password">Password:</label>
     			<input type="password" id="password" name="password/">
   		</div>
-  		<div>
+  		<div class="row">
 			<label id="gender">Gender:</label>
 			<span id="gender1">
 				<input id="rd1" type="radio"  name="sex" value="Male" /><span>Male</span>
 				<input id="rd2" type="radio"  name="sex" value="female" /><span>Female</span>
 			</span>
   		</div>
-  		<div>
+  		<div class="row">
 			<label for="address">Address:</label>
         		<textarea id="address" name="address"></textarea>
   		</div>
-  		<div>
+  		<div class="row">
  			<label for="num">Ph no:</label>
         		<input id="num" name="num" type="number"/>
   		</div>
-  		<div>
+  		<div class="row">
 			<label id="language">Languages known:</label>
 			<span id="lang">
 				<input type="checkbox"  value="Malayalam" name="lan"/>
@@ -52,7 +52,7 @@
        				<span>Hindi</span>
 			</span>
   		</div>
-  		<div>
+  		<div class="row">
 			<label id="dis">district:</label>
         		<select name="district" id="select">
         			<option selected="" value="Default"> (Please select a district)</option>
@@ -63,8 +63,7 @@
         			<option value="AD" name="place">IDUKKI</option>
         		</select>
   		</div>
-  		<br>
-    		<input type="submit" value="Submit" />
+		<button type="submit" >Sign Up</button>
   	  </form>
   </div>
 </body>

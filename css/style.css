@@ -2,6 +2,11 @@
 	margin: auto;
 	width:70%;
 }
+body{
+	
+	font-family:'Poppins',sans-serif;
+	font-size:14px;
+}
 #firstForm {
     width:50%;
     padding: 20px;
@@ -9,7 +14,34 @@
     border-radius: 4px;
     
 }
+#firstForm button {
+    padding: 10px;
+    margin-top: 10px;
+    width:100px;
+    margin-left:150px;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+.row input,select {
+    	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	font-size: 12px;
+	padding: 10px;
+	
+}
 
+.row textarea{
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	font-size: 12px;
+	display: block;
+	width: 350px;
+	height: 150px;
+	padding: 10px;
+	
+}
 form label {
   display: inline-block;
   width: 100px;
@@ -24,7 +56,3 @@ form div {
   margin-left:100px;
 }
 
-
-label.error {
-  display: inline;
-}
